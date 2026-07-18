@@ -53,8 +53,15 @@ The PhraseLock companion app isn't distributed through GitHub — iOS and
 Android don't allow that for regular users, so grab it from the official
 stores instead:
 
-[<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="50">](https://apps.apple.com/app/phrase-lock/id681088139)
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="65">](https://play.google.com/store/apps/details?id=com.ipoxo.plock6)
+
+<div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;">
+<a class="qr-link-appstore pum-trigger" style="display: inline-block; padding-top: 14px; cursor: pointer;"><br>
+<img decoding="async" style="height: 60px;" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store"><br>
+</a><br>
+<a class="qr-link-playstore pum-trigger" style="display: inline-block; cursor: pointer;"><br>
+<img decoding="async" style="height: 86px;" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play"><br>
+</a></div>
+
 
 ## Getting started
 
