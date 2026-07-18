@@ -1,4 +1,4 @@
-# PhraseLock
+# PhraseLock - Your Login Wallet
 
 Self-hosted backend for password managers. No third party ever sees your
 data or credentials — everything runs on hardware you own.
