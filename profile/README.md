@@ -54,7 +54,7 @@ Android don't allow that for regular users, so grab it from the official
 stores instead:
 
 [<img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" height="50">](https://apps.apple.com/app/phrase-lock/id681088139)
-[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="50">](https://play.google.com/store/apps/details?id=com.ipoxo.plock6)
+[<img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" height="65">](https://play.google.com/store/apps/details?id=com.ipoxo.plock6)
 
 ## Getting started
 
