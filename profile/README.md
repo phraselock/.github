@@ -1,92 +1,26 @@
 # PhraseLock - Your Login Wallet
 
-Self-hosted backend for password managers. No third party ever sees your
-data or credentials — everything runs on hardware you own.
+PhraseLock is a full service password and credential wallet with self-hosted backend and private communication channel. It gives you the utmost control over your credentials and how to apply them. Everything between your smartphone and your computer is pure open source.
 
 
-## Why
+## Architecture at a glance
 
-Most password-manager backends are someone else's server. PhraseLock is a
-set of components you deploy on your own infrastructure (a Raspberry Pi, a
-VPS, whatever you already control), so the trust boundary stops at hardware
-you physically or contractually own.
+PhraseLock works out of the box and you have the choice to use the public channel or to run your own infrastructure by installing PhraseLock-Bridge. If you want to use e.g. KeyPass as a main source for your credentials, **PhraseLock-Bridge** is mandatory.
 
-## Mobile apps & Computer Installations
-
-The PhraseLock apps for your smartphone and your computer (Windows 11, Mac) can be downloaded here.
-
-[https://phraselock.com/download](https://phraselock.com/download)
-
- ![With public infrastructure](img/1.svg) 
-
+<br/>
 <img src="img/1.svg" width="1700" alt="Modul-Abhängigkeiten">
-
-```mermaid
-flowchart LR
-    PC[PC, Mac] -->|mTLS| Yours[Your infrastructure<br/>no third party involved]
-    Yours -->|mTLS| Phone[Smartphone<br/>iOS, Android]
-
-    style Yours fill:#dbeafe,stroke:#2563eb,stroke-width:2px
-```
+<br/>
 
 ## Repositories
 
 | Repo | What it is |
 |---|---|
-| [PhraseLock-Bridge](https://github.com/phraselock/PhraseLock-Bridge) | Native `install.sh` installers (whiptail-driven) that turn a bare Raspberry Pi/VPS into a running PhraseLock deployment — PKI, nginx, mosquitto, systemd units, no Docker. Start here if you want to run your own instance. |
-| [plp-custom](https://github.com/phraselock/plp-custom) | The per-customer service deployed by `PLPServer` (via PhraseLock-Bridge) — issues bootstrap/MQTT client certs for that customer's devices and talks to the PhraseLock license server for select operations. `plp-backend` depends on it, since both run in the customer's own context. |
-| [plp-backend](https://github.com/phraselock/plp-backend) | MQTT-connected service layer that talks to the actual password-manager backends (KeePass, Psono), toggled per deployment via `bes.keepass.enabled` / `bes.psono.enabled`. Runs alongside `plp-custom` on the customer's device. |
-
-`plp-core`, the PhraseLock license server, is intentionally not part of this
-list — it never runs at the customer's site and isn't open-sourced.
-
-## Architecture at a glance
-
-Configuration and day-to-day operation use different paths — `plp-custom`
-is only ever involved in setup, never in the ongoing runtime traffic.
-
-**Configuration** (one-time, per device)
-
-```mermaid
-flowchart TD
-    subgraph Device["Customer device (PLPServer)"]
-        Custom[plp-custom]
-        Backend[plp-backend]
-        Custom -.->|issues certs for| Backend
-    end
-    Core[["PhraseLock license server<br/>(plp-core, central, closed-source)"]]
-
-    PC[PC / Mac] -->|mTLS :443, setup only| Custom
-    Custom -.->|select operations| Core
-```
-
-
-**Operation** (runtime, MQTT only)
-
-```mermaid
-flowchart TD
-    subgraph Device["Customer device (PLPServer)"]
-        Backend[plp-backend]
-        MQ[mosquitto]
-        Backend <-->|MQTT/mTLS| MQ
-    end
-
-    PC[PC / Mac] -->|MQTT/mTLS :8883| MQ
-    Phone[Smartphone] -->|MQTT/mTLS :8883| MQ
-```
-
-
-
-
-
-
-## Getting started
-
-To run your own PhraseLock backend, see
-[PhraseLock-Bridge](https://github.com/phraselock/PhraseLock-Bridge) — it
-packages everything above into guided installers, no manual PKI or config
-editing required.
+| [PhraseLock-Bridge](https://github.com/phraselock/PhraseLock-Bridge) | Native shell script installers that turns a Linux server (Debina, Ubuntu) into your **private channel** between the **PhraseLock app** on your smartphone and the **PhraseLock-Port** Installation on your PC or Mac. Minimum requirement is just a Raspberry Pi or a virtual private server in the smallest configuration you can by for.|
+| [plp-custom](https://github.com/phraselock/plp-custom) | **plp-custom** is a single .jar serive installed by PhraseLock-Bridge. It servers client certificate distribution for MQTT and license verification.|
+| [PhraseLock-Backend](https://github.com/phraselock/plp-backend) | **PhraseLock-Backend** provides natively support of `Keepass`. It gives you the opportunity to manage your credentials and login-parameters centralised managed by `KeyyPassXC` or whatever you prefer. |
 
 ## License
 
-<!-- TODO (Thomas): Lizenz/Kontakt ergänzen -->
+PhraseLock-Bridge is licensed under the MIT License — see
+[LICENSE](https://github.com/phraselock/PhraseLock-Bridge/blob/main/LICENSE)
+for details.
