@@ -17,7 +17,7 @@ The PhraseLock apps for your smartphone and your computer (Windows 11, Mac) can 
 
 [https://phraselock.com/download](https://phraselock.com/download)
 
-
+![Public](first.drawio-1.svg)
 
 ```mermaid
 flowchart LR
@@ -46,7 +46,7 @@ is only ever involved in setup, never in the ongoing runtime traffic.
 **Configuration** (one-time, per device)
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Device["Customer device (PLPServer)"]
         Custom[plp-custom]
         Backend[plp-backend]
@@ -58,10 +58,11 @@ flowchart LR
     Custom -.->|select operations| Core
 ```
 
+
 **Operation** (runtime, MQTT only)
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Device["Customer device (PLPServer)"]
         Backend[plp-backend]
         MQ[mosquitto]
