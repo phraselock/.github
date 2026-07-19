@@ -9,7 +9,7 @@ PhraseLock works out of the box and you have the choice to use the public channe
 
 <br/>
 <img src="img/1.svg" width="1700" alt="Modul-Abhängigkeiten">
-<br/>
+<br/><br/>
 
 ## Repositories
 
