@@ -17,7 +17,9 @@ The PhraseLock apps for your smartphone and your computer (Windows 11, Mac) can 
 
 [https://phraselock.com/download](https://phraselock.com/download)
 
-![With public infrastructure](img/1.svg)
+ ![With public infrastructure](img/1.svg) 
+
+<img src="img/1.svg" width="1700" alt="Modul-Abhängigkeiten">
 
 ```mermaid
 flowchart LR
