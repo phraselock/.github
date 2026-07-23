@@ -16,9 +16,9 @@ PhraseLock works out of the box and you have the choice to use the public channe
 | Repo | What it is |
 |---|---|
 | [PhraseLock-Bridge](https://github.com/phraselock/PhraseLock-Bridge) | Native shell script installers that turns a Linux server (Debina, Ubuntu) into your **private channel** between the **PhraseLock app** on your smartphone and the **PhraseLock-Port** Installation on your PC or Mac. Minimum requirement is just a Raspberry Pi or a virtual private server in the smallest configuration you can by for.|
-| [plp-custom](https://github.com/phraselock/plp-custom) | **plp-custom** is a single .jar serive installed by PhraseLock-Bridge. It servers client certificate distribution for MQTT and license verification.|
+<!--
 | [PhraseLock-Backend](https://github.com/phraselock/plp-backend) | **PhraseLock-Backend** provides natively support of `Keepass`. It gives you the opportunity to manage your credentials and login-parameters centralised managed by `KeyyPassXC` or whatever you prefer. |
-
+-->
 ## License
 
 PhraseLock-Bridge is licensed under the MIT License — see
