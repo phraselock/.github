@@ -24,3 +24,7 @@ PhraseLock works out of the box and you have the choice to use the public channe
 PhraseLock-Bridge is licensed under the MIT License — see
 [LICENSE](https://github.com/phraselock/PhraseLock-Bridge/blob/main/LICENSE)
 for details.
+
+---
+
+© 2026 iPoxo IT GmbH — All rights reserved
