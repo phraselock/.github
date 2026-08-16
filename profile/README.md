@@ -1,4 +1,4 @@
-# PhraseLock - Your Login Wallet
+# PhraseLock-Bridge - Your Own Relay-Server
 
 PhraseLock is a full service password and credential wallet with self-hosted backend and private communication channel. It gives you the utmost control over your credentials and how to apply them. Everything between your smartphone and your computer is pure open source.
 
