@@ -21,6 +21,9 @@ PhraseLock works out of the box and you have the choice to use the public channe
 <!--
 | [PhraseLock-Backend](https://github.com/phraselock/plp-backend)<br/>[![Release](https://img.shields.io/github/v/release/phraselock/plp-backend)](https://github.com/phraselock/plp-backend/releases/latest) | **PhraseLock-Backend** provides natively support of `Keepass`. It gives you the opportunity to manage your credentials and login-parameters centralised managed by `KeePassXC` or whatever you prefer. |
 -->
+<!--
+| [plp-custom](https://github.com/phraselock/plp-custom)<br/>[![Release](https://img.shields.io/github/v/release/phraselock/plp-custom)](https://github.com/phraselock/plp-custom/releases/latest) | Per-customer service deployed by PLPServer: issues bootstrap and MQTT client certificates and talks to the PhraseLock license server. |
+-->
 ## License
 
 PhraseLock-Bridge is licensed under the MIT License — see
