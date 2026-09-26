@@ -19,7 +19,7 @@ PhraseLock works out of the box and you have the choice to use the public channe
 | [PLP-FIDO-Example](https://github.com/phraselock/PLP-FIDO-Example)<br/>[![Release](https://img.shields.io/github/v/release/phraselock/PLP-FIDO-Example)](https://github.com/phraselock/PLP-FIDO-Example/releases/latest) | Windows demo app (C++, MFC) showing how an **application** can be secured with **FIDO2 / WebAuthn**: registration and sign-in against a security key, every step of the ceremony explained. Ready-to-run downloads for x64 and ARM64 under [Releases](https://github.com/phraselock/PLP-FIDO-Example/releases/latest). |
 | [plp-fido2](https://github.com/phraselock/plp-fido2)<br/>[![Release](https://img.shields.io/github/v/release/phraselock/plp-fido2)](https://github.com/phraselock/plp-fido2/releases/latest) | Minimal self-hosted **FIDO2 / WebAuthn** service in Java (WebAuthn4J): shows how a **web login** can be secured with security keys and passkeys - without buying expensive, heavyweight software. Single JAR with a backend that manages users and credentials. |
 <!--
-| [PhraseLock-Backend](https://github.com/phraselock/plp-backend) | **PhraseLock-Backend** provides natively support of `Keepass`. It gives you the opportunity to manage your credentials and login-parameters centralised managed by `KeePassXC` or whatever you prefer. |
+| [PhraseLock-Backend](https://github.com/phraselock/plp-backend)<br/>[![Release](https://img.shields.io/github/v/release/phraselock/plp-backend)](https://github.com/phraselock/plp-backend/releases/latest) | **PhraseLock-Backend** provides natively support of `Keepass`. It gives you the opportunity to manage your credentials and login-parameters centralised managed by `KeePassXC` or whatever you prefer. |
 -->
 ## License
 
